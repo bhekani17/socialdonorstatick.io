@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Social Donor 2</title>
+        <!--stylesheet-->
+        <link rel="stylesheet" href="css/style page 10.css">
+        <script src="https://code.iconify.design/2/2.2.1/iconify.min.js">
+
+        </script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+ </head>
+
+ <body>
+     <header>
+     <nav>
+       <a href=""><img src="images/logo.svg" alt=""></a> 
+
+        
+     <div class="nav-links">
+         <ul>
+             <li><a href="index.html">HOME</a></li>
+             <li><a href="donors names.html">DONOR</a></li>
+             <li><a href="super admini dashboard.html " class="active">ADMIN DASH</a></li>
+             <li><a href="blood request list.html ">REQUEST</a></li>
+           
+         </ul>
+
+     </div>
+     <input class="search-bar" type="text" placeholder="search">
+     <div class="icon-1">
+       <img src="images/fa_search.svg" alt="">
+    </div>
+        <div class="buttons2">
+            <a href="index.html" class="btn btn-1">Log out</a>
+            <img src="images/log out.svg" alt="">
+        </div>
+    </nav>
+    <div class="mini-bar"></div>
+    <div class="header-img">
+   <h2> DONATE TODAY</h2>
+   <h3>ADMIN DASHBOARD</h3>
+
+   <center>
+  
+    <div id="inner-nav">
+<a href="administration profile.html" id="buton-1"><img src="images/Profile.svg" alt=""> <h6>Profile</h6></a>
+<a href="" id="buton-3"><img src="images/location.svg" alt=""><h6>Where to Donate</h6></a>
+<a href="https://www.1news.co.nz/2022/08/27/muslims-unite-in-blood-donation-world-record-attempt/" id="buton-4"><img src="images/news.svg" alt=""> <h6>News</h6></a>
+<a href="alert page.html" id="buton-5"><img src="images/alert.svg" alt=""> <h6>Alert</h6></a>
+<a href="donors names.html" id="buton-6"><img src="images/dona.svg" alt="">     <h6>Become a DONOR</h6></a>
+
+</div>
+</center>
+
+</div>
+            
+  
+
+
+    </header>
+<!--deshboard-->
+    <main>
+     <div class="content">
+         <div class="registration">
+            <a href="donor signup.html"><button>Register user</button></a>
+       
+         </div>
+       
+         <div class="boxs">
+             <div class="box-1">
+                <h3>Visitors</h3>
+                <h4>1000</h4>
+                <p>16 June 2022</p>
+
+             </div>
+             <div class="box-2">
+                <h3>New Donors</h3>
+                <h4>200</h4>
+                <p>16 June 2022</p>
+            </div>
+            <div class="box-3">
+                <h3>Blood Banks</h3>
+                <h4>total 100</h4>
+                <p>16 June 2022</p>
+            </div>
+            <div class="box-4">
+                <h3>NEW REQUESTS</h3>
+                <h4>20</h4>
+                <p>16 June 2022</p>
+            </div>
+           
+
+
+     </div>
+     <div class="comments">
+         <p>comments</p>
+         <textarea name="" id="" cols="30" rows="10"></textarea>
+     </div>
+     <div class="graphs">
+        
+<canvas id="bargraph" style="width:100%;max-width:600px"></canvas>
+
+<script>
+var xValues = ["WOMAN", "MEN", ];
+var yValues = [55,53,44,];
+var barColors = ["pink", "blue",];
+
+new Chart("bargraph", {
+  type: "bar",
+  data: {
+    labels: xValues,
+    datasets: [{
+      backgroundColor: barColors,
+      data: yValues
+    }]
+  },
+  options: {
+    legend: {display: false},
+    title: {
+      display: true,
+      text: "Newly registered donors 2022"
+    }
+  }
+});
+</script>
+
+     </div>
+     <div class="graphs2">
+        
+        <canvas id="bargraph2" style="width:100%;max-width:600px"></canvas>
+        
+        <script>
+        var xValues = ["WOMAN", "MEN", ];
+        var yValues = [44,30,20,];
+        var barColors = ["pink", "blue",];
+        
+        new Chart("bargraph2", {
+          type: "bar",
+          data: {
+            labels: xValues,
+            datasets: [{
+              backgroundColor: barColors,
+              data: yValues
+            }]
+          },
+          options: {
+            legend: {display: false},
+            title: {
+              display: true,
+              text: "Active donors 2022"
+            }
+          }
+        });
+        </script>
+        
+             </div>
+             <div class="donors-names">
+                <div class="head-name">
+                    <h2>DONORS</h2>
+                    <h3>NAMES</h3>
+                    <div class="telephone">
+                        <h3>Teleohone</h3>
+                    </div>
+                    <div class="blood-type">
+                        <h3>Blood Type</h3>
+                    </div>
+                 
+                 
+                </div>
+                <div class="list-names">
+                
+                    <div class="box-60">
+          
+                        <div class="iterms">
+                            <ul>
+                                <li> <div class="donors-infor">
+                                    <img src="images/donors pics.svg" alt="">
+                                    <p>Elon Musk</p>
+                                 
+                                </div></li>
+                                <li> <div class="donors-infor">
+                                    <img src="images/donors pics.svg" alt="">
+                                    <p>Elon Musk</p>
+                                 
+                                </div></li>
+                                <li> <div class="donors-infor">
+                                    <img src="images/donors pics.svg" alt="">
+                                    <p>Elon Musk</p>
+                                 
+                                </div></li>
+                                <li> <div class="donors-infor">
+                                    <img src="images/donors pics.svg" alt="">
+                                    <p>Elon Musk</p>
+                                 
+                                </div></li>
+                                <li> <div class="donors-infor">
+                                    <img src="images/donors pics.svg" alt="">
+                                    <p>Elon Musk</p>
+                                 
+                                </div></li>
+                                <li> <div class="donors-infor">
+                                    <img src="images/donors pics.svg" alt="">
+                                    <p>Elon Musk</p>
+                                 
+                                </div></li>
+                                
+                                
+                            </ul>
+               
+                    </div>
+                    
+                    <div class="bloodtype">
+                        <ul>
+                            <li> <div class="donors-blood">
+                               <img src="images/blood type.svg" alt="">
+                            
+                            </div></li>
+                            <li> <div class="donors-blood">
+                                <img src="images/blood type.svg" alt="">
+                              
+                             
+                            </div></li>
+                            <li> <div class="donors-blood">
+                                <img src="images/blood type.svg" alt="">
+                             
+                             
+                            </div></li>
+                            <li> <div class="donors-blood">
+                                <img src="images/blood type.svg" alt="">
+                             
+                            </div></li>
+                            <li> <div class="donors-blood">
+                                <img src="images/blood type.svg" alt="">
+                             
+                            </div></li>
+                            <li> <div class="donors-blood">
+                               
+                                <img src="images/blood type.svg" alt="">
+                            </div></li>
+                            
+                            
+                        </ul>
+           
+                </div>
+                         
+                <div class="phone">
+                    <ul>
+                        <li> <div class="donors-infor">
+                            
+                            <p>+27894675743</p>
+                         
+                        </div></li>
+                        <li> <div class="donors-infor">
+                            <p>+27894675743</p>
+                         
+                        </div></li>
+                        <li> <div class="donors-infor">
+                            <p>+27894675743</p>
+                         
+                        </div></li>
+                        <li> <div class="donors-infor">
+                            <p>+27894675743</p>
+                         
+                        </div></li>
+                        <li> <div class="donors-infor">
+                            <p>+27894675743</p>
+                         
+                        </div></li>
+                        <li> <div class="donors-infor">
+                            <p>+27894675743</p>
+                        </div></li>
+                        
+                        
+                    </ul>
+       
+            </div>
+                </div>
+
+             </div>
+    </main>
+        
+
+<!--footer-->
+<footer>
+    <div id="footer-bulk">
+        
+        <div class="footer-items">
+            <h4>WHERE TO DONATE</h4>
+            <br>
+            <ul>
+               <li><a href="">Donor centers</a></li> 
+               <li><a href="">Blood drives</a></li> 
+               <li><a href="">Book a blood drive</a></li> 
+            </ul>
+            
+            <div class="logo-2">
+                <a href=""><img src="images/logo.svg" alt=""></a> 
+                <div id="copy-r">
+                    <i><P>© Socialdonor 2011-2022
+                        Terms & Conditions
+                        Privacy
+                        </P></i>
+                </div>
+                
+            </div>
+           
+        </div>
+          <div class="footer-items">
+              <h4>DONORS</h4>
+              <br>
+              <ul>
+               <li><a href="">who can donate ?</a></li> 
+               <li><a href="">why donate blood ?</a></li> 
+               <li><a href="">Donation process</a></li> 
+               <li><a href="">Deferrals</a></li>
+               <li><a href="">Brand Ambassador</a></li>
+               <li><a href="">FAQs</a></li>
+              
+              </ul>
+           </div>
+           <div class="footer-items">
+            <br><br>
+            <ul>
+               <li><a href="">About us</a></li> 
+               <li><a href="">Blood products</a></li> 
+               <li><a href="">blood type</a></li> 
+               <li><a href="">campaigns</a></li> 
+               <li><a href="">Careers</a></li>  
+               <li><a href="">Chat page</a></li> 
+               <li><a href="">Clinical service</a></li> 
+               <li><a href="">Donation process</a></li> 
+              
+            </ul>
+        </div>
+        <div class="footer-items">
+            <h4>CONTACTS</h4>
+            <br>
+            <ul>
+               <li><a href="">011 000 1234</a></li> 
+               <li><a href="">Email:socialdonor01@gmail.com</a></li>  
+            </ul>
+        </div>
+    
+        <div class="footer-30">
+            <br>
+            <input id="search-bar" type="text" placeholder="Enter your email">
+            <br>
+<div id="subscribe">
+    <center><a href="#">Subscribe</a></center>
+
+    <br><br>
+            <p><i>By subscribing you confirm that you have read  and<br> 
+                accept our terms of use</i> </p>
+</div>
+           
+            
+     <br><br><br><br>
+                <div id="footer-items-5">
+                    <ul>
+                       <li><a href=""><img src="images/facebook icon.svg" alt=""></a></li> 
+                       <li><a href=""><img src="images/linked in.svg" alt=""></a></li> 
+                       <li><a href=""><img src="images/twitter.svg" alt=""></a></li> 
+                      
+                    </ul>
+                </div>
+                
+        </div>
+
+       
+
+
+    </div>
+    
+</footer>
+    </main>
+   
+ </body>
+</html>

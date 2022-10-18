@@ -1,0 +1,280 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav{
+    background:#D60505;
+    height: 70px;
+
+}.active{
+    background-color: #ff000085;
+    width: auto;
+    height: auto;
+    cursor: pointer;
+ padding: 5px;
+ border-radius: 2px;
+ border: 1px solid rgb(255, 255, 255);
+}
+nav img{
+    padding-left: 20px;
+}
+.nav-links ul{
+    display: flex;
+    list-style: none;
+    padding-left: 100px;   
+}
+.nav-links ul li{
+    margin-top: -40px;
+}
+.nav-links ul li a{
+    text-decoration: none;
+    color: aliceblue;
+    margin: 50px;
+    font-weight: bold;
+
+}
+
+/*search*/
+.search-bar{
+    position: relative;
+    margin-left: 950px;  
+   top: -50px;
+   background-color: rgb(255, 255, 255);
+   border-radius: 2px;
+   list-style: none;
+   border: #D60505;
+   padding: 10px 20px 10px 90px;
+   
+   }
+   .search-bar ::placeholder{
+      font-size: 2px;
+     
+   }
+   .icon-1{
+       position: relative;
+       margin-left: 1160px;
+       margin-top: -79px;
+   }
+   /*search*/
+.btn{
+    text-decoration: none;
+    font-size: 19px;
+    position: relative;
+    margin: 10px;
+
+}
+   
+.buttons2{
+    display: flex;
+    flex-direction: row;
+    margin-left: 1290px;
+    margin-top: -43px;
+}
+
+.btn-1{
+    color: aliceblue;
+    font-weight: bolder;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+.btn-2{
+    color: azure;
+    font-weight: bolder;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+/*inner bar*/
+.mini-bar{
+    height: 90px;
+    width: 100%;
+    background:#C3BFBF;
+}
+#inner-nav{
+height: 100px;
+width: 900px;
+background: #ffffff;
+position: relative;
+top: -170px;
+display: inline-flex;
+justify-items: center;
+gap: 100px;
+}
+#inner-nav a{
+    margin: 20px 20px 20px 20px;
+    text-decoration: none;
+  
+}
+#inner-nav #buton-4 h6{
+    margin-top: 17px;
+}
+#inner-nav a h6{
+
+    margin-top: 10px;
+   color: black;
+   font-size: 11px;
+   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+/*inner nav close*/
+
+.header-img{
+background-image: url(../images/blood\ cover\ top.jpg);
+background-repeat: no-repeat;
+height: 200px;
+background-size: cover;
+}
+
+
+h2{
+    display: inline-flex;
+    position: relative;
+    padding-left: 990px; 
+    padding-top: 85px;
+    font-size: 40px;
+    
+
+}
+
+
+/*main*/
+main{
+  
+    
+}
+#alert input{
+padding: 2px 50px 2px 0px;
+background: #e0e0e0;
+border-radius: 5px;
+margin-left: 20px;
+border: white;
+outline: #ffafaf;
+
+}
+#alert{
+    margin-left: 155px;
+}
+
+.messages textarea{
+    margin-top: 20px;
+    background: #D9D9D9;
+}
+.messages form {
+    margin-top: 100px;
+    font-weight: bold;
+    font-size: 30px;
+}
+.messages h1{
+    position: relative;
+    top: 80px;
+    margin-left: 155px;
+   
+    
+}
+.messages button{
+   background: #D60505;
+   border-radius: 20px;
+   padding: 15px 30px  15px 30px ;
+   margin-right:60px;
+   }
+.messages button p{
+    color: #ffffff;
+    font-weight: bold;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+
+/*main close*/
+
+
+/*footer*/
+
+
+#footer-bulk{
+    background: #D60005;
+    width: 100%;
+    height: 280px;
+    display: flex;
+    justify-content: space-around;
+
+}
+.footer-items .logo-2{
+    margin-top: 80px;
+}
+#copy-r{
+    color: #ffffff;
+    position: absolute;
+    left: 129px;
+    margin-top: -20px;
+}
+.footer-items{
+    margin: 20px;
+}
+.footer-items h4{
+ color: white;
+}
+
+.footer-items li{
+list-style-type: circle;
+color: #ffffff;
+
+}
+.footer-items a{
+    text-decoration: none;
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 500px;
+}
+.footer-30 input{
+    width: 100%;
+    height: 45px;
+    border: 3px solid rgb(208, 0, 0);
+    border-radius: 4px;
+    outline: rgb(65, 48, 48);
+}
+#subscribe{
+    width: 100%;
+    height: 45px;
+    border: 3px solid rgb(255, 255, 255);
+    border-radius: 4px;
+    outline: rgb(255, 251, 251);
+    background: #D60505;
+    margin-top: 10px;
+}
+#subscribe a{
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+    position: relative;
+    top: 8px;
+}
+#subscribe p{
+    color: azure;
+    font-weight: 200;
+
+}
+#footer-items-5 ul {
+    display: inline-flex;
+    justify-content: space-between;
+    gap: 50px;
+    margin-top: 30px;
+}
+
+#footer-items-5 li{
+ list-style: none;
+}
+#footer-items-5 a img{
+width: 30px;
+height: 30px;
+}
+
+.nav-links a:hover{
+    background-color: #ff000085;
+    width: auto;
+    height: auto;
+ padding: 5px;
+ border-radius: px;
+ border: 1px solid rgb(255, 255, 255);
+
+}

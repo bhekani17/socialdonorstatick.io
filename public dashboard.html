@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Social Donor 2</title>
+        <!--stylesheet-->
+        <link rel="stylesheet" href="css/style page 9.css">
+        <script src="https://code.iconify.design/2/2.2.1/iconify.min.js">
+
+        </script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+ </head>
+
+ <body>
+     <header>
+     <nav>
+       <a href=""><img src="images/logo.svg" alt=""></a> 
+
+        
+     <div class="nav-links">
+         <ul>
+             <li><a href="index.html">HOME</a></li>
+             <li><a href="donors names.html">DONOR</a></li>
+             <li><a href="public dashboard.html " class="active">DASHBOARD</a></li>
+             <li><a href="blood request list.html ">REQUEST</a></li>
+             <li><a href="login admin.html ">ADMIN</a></li>
+         </ul>
+
+     </div>
+     <input class="search-bar" type="text" placeholder="search">
+     <div class="icon-1">
+       <img src="images/fa_search.svg" alt="">
+    </div>
+        <div class="buttons2">
+            <a href="index.html" class="btn btn-1">Log out</a>
+            <img src="images/log out.svg" alt="">
+        </div>
+    </nav>
+    <div class="mini-bar"></div>
+    <div class="header-img">
+   <h2> DONATE TODAY</h2>
+
+   
+   <center>
+  
+    <div id="inner-nav">
+<a href="donors profile.html" id="buton-1"><img src="images/Profile.svg" alt=""> <h6>Profile</h6></a>
+<a href=".MOCKUP 3 PAGE 1/mockup 3.html" id="buton-3"><img src="images/location.svg" alt=""><h6>Where to Donate</h6></a>
+<a href="https://www.1news.co.nz/2022/08/27/muslims-unite-in-blood-donation-world-record-attempt/" id="buton-4"><img src="images/news.svg" alt=""> <h6>News</h6></a>
+<a href=".MOCK UP PAGE 5/alert page.html" id="buton-5"><img src="images/alert.svg" alt=""> <h6>Alert</h6></a>
+<a href="/Mock up 3/MOCKUP PAGE 2/donor signup.html" id="buton-6"><img src="images/dona.svg" alt="">     <h6>Become a DONOR</h6></a>
+
+</div>
+</center>
+
+</div>
+            
+  
+
+    </header>
+    
+<!--deshboard-->
+    <main>
+     <div class="content">
+         <H2>Dashboard</H2>
+         <div class="boxs">
+             <div class="box-1">
+                 <p>Requests</p>
+                 <div class="date">
+                     <p>15 March 2022</p>
+                     <div class="total">
+                        <p>Total</p>
+                       <h6>12</h6>
+                       <img src="images/request.svg" alt="">
+                    </div>
+                 </div>
+
+             </div>
+             <div class="box-2">
+                <p>Received</p>
+                <div class="date-2">
+                    <p>15 March 2022</p></div>
+                    <div class="total-2">
+                        <p>Total</p>
+                       <h6>12</h6>
+                       <img src="images/request.svg" alt="">
+                    </div>
+            </div>
+            <div class="box-3">
+                <p>In Stock</p>
+                <div class="date-3">
+                    <p>15 March 2022</p></div>
+                    <div class="total-3">
+                        <p>Total</p>
+                       <h6>12</h6>
+                       <img src="images/request.svg" alt="">
+                    </div>
+            </div>
+             
+         </div>
+         <div class="background">
+            <div class="headings">
+
+         <H3>Analysis</H3>
+            <p>Recent Donations</p>
+            </div>
+       
+
+            <div class="box">
+          
+                <div class="iterms">
+                    <ul>
+                        <li> <div class="donors-infor">
+                            <img src="images/lisi photo.svg" alt="">
+                            <p>Elon Musk</p>
+                         
+                        </div></li>
+                        <li> <div class="donors-infor">
+                            <img src="images/lisi photo.svg" alt="">
+                            <p>Elon Musk</p>
+                         
+                        </div></li>
+                        <li> <div class="donors-infor">
+                            <img src="images/lisi photo.svg" alt="">
+                            <p>Elon Musk</p>
+                         
+                        </div></li>
+                        <li> <div class="donors-infor">
+                            <img src="images/lisi photo.svg" alt="">
+                            <p>Elon Musk</p>
+                         
+                        </div></li>
+                        <li> <div class="donors-infor">
+                            <img src="images/lisi photo.svg" alt="">
+                            <p>Elon Musk</p>
+                         
+                        </div></li>
+                        <li> <div class="donors-infor">
+                            <img src="images/lisi photo.svg" alt="">
+                            <p>Elon Musk</p>
+                         
+                        </div></li>
+                        
+                        
+                    </ul>
+       
+            </div>
+            
+            
+   
+        </div>
+        </div>
+     
+        <div class="piechart-1">
+        <canvas id="myChart" style="width:100%;max-width:600px"></canvas>
+
+        <script>
+        var xValues = ["60% Not able to donate", "33% able ", "62% Donated",];
+        var yValues = [ 62, 33, 5];
+        var barColors = [
+          "#ffffff",
+          "#00000f",
+          "#6B6B6B",
+        
+        
+        ];
+        
+        new Chart("myChart", {
+          type: "pie",
+          data: {
+            labels: xValues,
+            datasets: [{
+              backgroundColor: barColors,
+              data: yValues
+            }]
+          },
+          options: {
+            title: {
+              display: true,
+              text: "An estimated percentage of the S.A population is eligible to donate"
+            }
+          }
+        });
+        </script>
+        </div>
+     </div>
+
+    </main>
+        
+
+<!--footer-->
+<footer>
+    <div id="footer-bulk">
+        
+        <div class="footer-items">
+            <h4>WHERE TO DONATE</h4>
+            <br>
+            <ul>
+               <li><a href="">Donor centers</a></li> 
+               <li><a href="">Blood drives</a></li> 
+               <li><a href="">Book a blood drive</a></li> 
+            </ul>
+            
+            <div class="logo-2">
+                <a href=""><img src="images/logo.svg" alt=""></a> 
+                <div id="copy-r">
+                    <i><P>© Socialdonor 2011-2022
+                        Terms & Conditions
+                        Privacy
+                        </P></i>
+                </div>
+                
+            </div>
+           
+        </div>
+          <div class="footer-items">
+              <h4>DONORS</h4>
+              <br>
+              <ul>
+               <li><a href="">who can donate ?</a></li> 
+               <li><a href="">why donate blood ?</a></li> 
+               <li><a href="">Donation process</a></li> 
+               <li><a href="">Deferrals</a></li>
+               <li><a href="">Brand Ambassador</a></li>
+               <li><a href="">FAQs</a></li>
+              
+              </ul>
+           </div>
+           <div class="footer-items">
+            <br><br>
+            <ul>
+               <li><a href="">About us</a></li> 
+               <li><a href="">Blood products</a></li> 
+               <li><a href="">blood type</a></li> 
+               <li><a href="">campaigns</a></li> 
+               <li><a href="">Careers</a></li>  
+               <li><a href="">Chat page</a></li> 
+               <li><a href="">Clinical service</a></li> 
+               <li><a href="">Donation process</a></li> 
+              
+            </ul>
+        </div>
+        <div class="footer-items">
+            <h4>CONTACTS</h4>
+            <br>
+            <ul>
+               <li><a href="">011 000 1234</a></li> 
+               <li><a href="">Email:socialdonor01@gmail.com</a></li>  
+            </ul>
+        </div>
+    
+        <div class="footer-30">
+            <br>
+            <input id="search-bar" type="text" placeholder="Enter your email">
+            <br>
+<div id="subscribe">
+    <center><a href="#">Subscribe</a></center>
+
+    <br><br>
+            <p><i>By subscribing you confirm that you have read  and<br> 
+                accept our terms of use</i> </p>
+</div>
+           
+            
+     <br><br><br><br>
+                <div id="footer-items-5">
+                    <ul>
+                       <li><a href=""><img src="images/facebook icon.svg" alt=""></a></li> 
+                       <li><a href=""><img src="images/linked in.svg" alt=""></a></li> 
+                       <li><a href=""><img src="images/twitter.svg" alt=""></a></li> 
+                      
+                    </ul>
+                </div>
+                
+        </div>
+
+       
+
+
+    </div>
+    
+</footer>
+
+    </main>
+   
+ </body>
+</html>

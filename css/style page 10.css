@@ -1,0 +1,518 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav{
+    background:#D60505;
+    height: 70px;
+
+}
+.active{
+    background-color: #ff000085;
+    width: auto;
+    height: auto;
+    cursor: pointer;
+ padding: 5px;
+ border-radius: 2px;
+ border: 1px solid rgb(255, 255, 255);
+}
+nav img{
+    padding-left: 20px;
+}
+.nav-links ul{
+    display: flex;
+    list-style: none;
+    padding-left: 100px;   
+}
+.nav-links ul li{
+    margin-top: -40px;
+}
+.nav-links ul li a{
+    text-decoration: none;
+    color: aliceblue;
+    margin: 50px;
+    font-weight: bold;
+
+}
+
+/*search*/
+.search-bar{
+    position: relative;
+    margin-left: 950px;  
+   top: -50px;
+   background-color: rgb(255, 255, 255);
+   border-radius: 2px;
+   list-style: none;
+   border: #D60505;
+   padding: 10px 20px 10px 90px;
+   
+   }
+   .search-bar ::placeholder{
+      font-size: 2px;
+     
+   }
+   .icon-1{
+       position: relative;
+       margin-left: 1160px;
+       margin-top: -79px;
+   }
+   /*search*/
+   
+.buttons2{
+    display: flex;
+    flex-direction: row;
+    margin-left: 1290px;
+    margin-top: -43px;
+}
+.btn{
+    text-decoration: none;
+    font-size: 19px;
+    position: relative;
+    margin: 10px;
+
+}
+.btn-1{
+    color: aliceblue;
+
+    font-weight: bolder;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+.btn-2{
+    color: azure;
+    font-weight: bolder;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
+
+/*inner bar*/
+.mini-bar{
+    height: 90px;
+    width: 100%;
+    background:#C3BFBF;
+}
+#inner-nav{
+height: 100px;
+width: 900px;
+background: #ffffff;
+display: inline-flex;
+justify-items: center;
+gap: 100px;
+position: relative;
+bottom: 210px;
+}
+#inner-nav a{
+    margin: 20px 20px 20px 20px;
+    text-decoration: none;
+  
+}
+#inner-nav #buton-4 h6{
+    margin-top: 17px;
+}
+#inner-nav a h6{
+
+    margin-top: 10px;
+   color: black;
+   font-size: 11px;
+   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+/*inner nav close*/
+
+
+.header-img{
+background-image: url(../images/blood\ cover\ top.jpg);
+background-repeat: no-repeat;
+height: 200px;
+background-size: cover;
+}
+.header-img h3{
+    margin-left: 200px;
+    font-size: 40px;
+    color: #D60505;
+
+}
+
+h2{
+    display: inline-flex;
+    position: relative;
+    padding-left: 990px; 
+    padding-top: 85px;
+    font-size: 40px;
+    
+
+}
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+/*main*/
+
+
+.boxs{
+    display: flex;
+    gap: 20px;
+    margin-left: 90px;
+    margin-top: 100px;
+  
+}
+
+.box-1{
+    background: #FFA5A5;
+    width: 300px;
+    height: 150px;
+    border-radius: 30px;  
+}
+.box-1 h3{
+    position: relative;
+    left: 110px;
+    top: 20px;
+ 
+    font-family: 'Secular One', sans-serif;
+}
+.box-1 h4{
+    position: relative;
+    left: 110px;
+    top: 20px;
+    color: #D60505;
+    font-size: 28px;
+}
+.box-1 p{
+    position: relative;
+    left: 100px;
+    top: 50px;
+    font-family: 'Secular One', sans-serif;
+}
+
+
+.box-2{
+    background: #FFA5A5;
+    width: 300px;
+    height: 150px;
+    border-radius: 30px;  
+}
+.box-2 h3{
+    position: relative;
+    left: 90px;
+    top: 20px;
+ 
+    font-family: 'Secular One', sans-serif;
+}
+.box-2 h4{
+    position: relative;
+    left: 90px;
+    top: 20px;
+    color: #D60505;
+    font-size: 28px;
+}
+.box-2 p{
+    position: relative;
+    left: 90px;
+    top: 50px;
+    font-family: 'Secular One', sans-serif;
+}
+.box-3{
+    background: #FFA5A5;
+    width: 300px;
+    height: 150px;
+    border-radius: 30px;  
+}
+.box-3 h3{
+    position: relative;
+    left: 110px;
+    top: 20px;
+   
+    font-family: 'Secular One', sans-serif;
+}
+.box-3 h4{
+    position: relative;
+    left: 110px;
+    top: 20px;
+    color: #D60505;
+    font-size: 20px;
+}
+.box-3 p{
+    position: relative;
+    left: 90px;
+    top: 50px;
+    font-family: 'Secular One', sans-serif;
+}
+.box-4{
+    background: #FFA5A5;
+    width: 300px;
+    height: 150px;
+    border-radius: 30px;  
+}
+.box-4 h3{
+    position: relative;
+    left: 80px;
+    top: 20px;
+ 
+    font-family: 'Secular One', sans-serif;
+}
+.box-4 h4{
+    position: relative;
+    left: 110px;
+    top: 20px;
+    color: #D60505;
+    font-size: 28px;
+}
+.box-4 p{
+    position: relative;
+    left: 100px;
+    top: 50px;
+    font-family: 'Secular One', sans-serif;
+}
+.comments textarea{
+    background: #FFA5A5;
+    width: 90%;
+    height: 40px;
+    border-radius: 10px;
+    margin-left: 100px;
+    margin-top: 100px;
+    padding-left: 30px;
+    padding-top: 10px;
+}
+.comments p{
+    color: #D60505;
+    font-weight: bold;
+    font-family: italic;
+    font-size: 20px;
+    margin-left: 160px;
+position: relative;;
+top:90px;
+   
+}
+.registration button{
+    margin-top: 50px;
+    margin-left: 200px;
+    background: #D60505;
+    padding: 16px;
+    color: white;
+    width: 280px;
+    border-radius: 20px;
+    font-size: 20px;
+    border: 0px;
+
+}
+
+/* graph*/
+.graphs{
+    margin-left: 100px;
+    margin-top: 100px;
+}
+.graphs2{
+    position: relative;
+   margin-left: 800px;
+    bottom: 300px;
+}
+/*donors name*/
+.box-60{
+    background: #ff000088;
+    width: 100%;
+    height: 900px;
+    margin-top: -450px;
+
+}
+
+.donors-names .head-name h2{
+position: relative;
+right: 800px;
+bottom: 260px;
+font-weight: bold;
+font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.donors-names .head-name h3{
+margin-left: 250px;
+position: absolute;
+top: 1500px;
+font-size: 25px;
+font-weight: bold;
+font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+.telephone h3{
+    position: absolute;
+left: 495px;
+}
+.blood-type h3{
+    position: absolute;
+left: 850px;
+}
+
+.iterms {
+position: relative;
+top: 300px;
+}
+
+    
+.donors-infor{
+    background: #ffffff;
+    height: 50px;
+    width: 400px;
+    margin: 30px;
+   margin-left: 100px;
+   border-radius: 20px;
+}
+.iterms ul{
+  list-style: none;
+}
+
+
+.donors-infor img{
+    margin-top: 9px;
+    margin-left: 50px;
+}
+.donors-infor p{
+    margin-left: 200px;
+    margin-top: -35px;
+    font-weight: bold;
+}
+.bloodtype{
+  position: relative;
+  bottom: 178px;
+    margin-left: 1000px;
+    }
+
+    .donors-blood{
+        background: #ffffff;
+        height: 50px;
+        width: 150px;
+        margin: 30px;
+       margin-left: 100px;
+       border-radius: 20px;
+    }
+    .bloodtype ul{
+      list-style: none;
+    }
+ 
+    .donors-infor p{
+        margin-left: 200px;
+        margin-top: -35px;
+        font-weight: bold;
+    }
+    .bloodtype img{
+        margin-left: 50px;
+        margin-top: 10px;
+        
+    }
+    .phone {
+        position: relative;
+       margin-left: 500px;
+       bottom: 655px;
+       
+        }
+        
+            
+        .phone .donors-infor{
+            background: #ffffff;
+            height: 50px;
+            width: 400px;
+            margin: 64px;
+           margin-left: 100px;
+           border-radius: 20px;
+        }
+        .phone ul{
+          list-style: none;
+        }
+    
+        .phone .donors-infor p{
+            position: relative;
+            right: 50px;
+            top: 20px;
+        }
+
+
+/*main close*/
+
+
+/*footer*/
+
+#footer-bulk{
+    background: #D60005;
+    width: 100%;
+    height: 280px;
+    display: flex;
+    justify-content: space-around;
+
+}
+.footer-items .logo-2{
+    margin-top: 80px;
+}
+#copy-r{
+    color: #ffffff;
+    position: absolute;
+    left: 120px;
+    margin-top: -20px;
+}
+.footer-items{
+    margin: 20px;
+}
+.footer-items h4{
+ color: white;
+}
+
+.footer-items li{
+list-style-type: circle;
+color: #ffffff;
+
+}
+.footer-items a{
+    text-decoration: none;
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 500px;
+}
+.footer-30 input{
+    width: 100%;
+    height: 45px;
+    border: 3px solid rgb(208, 0, 0);
+    border-radius: 4px;
+    outline: rgb(65, 48, 48);
+}
+#subscribe{
+    width: 100%;
+    height: 45px;
+    border: 3px solid rgb(255, 255, 255);
+    border-radius: 4px;
+    outline: rgb(255, 251, 251);
+    background: #D60505;
+    margin-top: 10px;
+}
+#subscribe a{
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+    position: relative;
+    top: 8px;
+}
+#subscribe p{
+    color: azure;
+    font-weight: 200;
+
+}
+#footer-items-5 ul {
+    display: inline-flex;
+    justify-content: space-between;
+    gap: 50px;
+    margin-top: 30px;
+}
+
+#footer-items-5 li{
+ list-style: none;
+}
+#footer-items-5 a img{
+width: 30px;
+height: 30px;
+}
+
+.nav-links a:hover{
+    background-color: #ff000085;
+    width: auto;
+    height: auto;
+ padding: 5px;
+ border-radius: px;
+ border: 1px solid rgb(255, 255, 255);
+
+}
