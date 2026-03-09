@@ -1,0 +1,11 @@
+[03-Mar-2026 23:59:20 Africa/Johannesburg] PHP Warning:  ini_set(): Session ini settings cannot be changed after headers have already been sent (sent from C:\Users\bmbea\Desktop\web projects\socialdonorstatick.io\setup_test.php on line 4) in C:\Users\bmbea\Desktop\web projects\socialdonorstatick.io\php\config.php on line 126
+[03-Mar-2026 23:59:20 Africa/Johannesburg] PHP Warning:  ini_set(): Session ini settings cannot be changed after headers have already been sent (sent from C:\Users\bmbea\Desktop\web projects\socialdonorstatick.io\setup_test.php on line 4) in C:\Users\bmbea\Desktop\web projects\socialdonorstatick.io\php\config.php on line 127
+[03-Mar-2026 23:59:20 Africa/Johannesburg] PHP Warning:  ini_set(): Session ini settings cannot be changed after headers have already been sent (sent from C:\Users\bmbea\Desktop\web projects\socialdonorstatick.io\setup_test.php on line 4) in C:\Users\bmbea\Desktop\web projects\socialdonorstatick.io\php\config.php on line 128
+[03-Mar-2026 23:59:20 Africa/Johannesburg] PHP Warning:  ini_set(): Session ini settings cannot be changed after headers have already been sent (sent from C:\Users\bmbea\Desktop\web projects\socialdonorstatick.io\setup_test.php on line 4) in C:\Users\bmbea\Desktop\web projects\socialdonorstatick.io\php\config.php on line 129
+[03-Mar-2026 23:59:20 Africa/Johannesburg] PHP Warning:  session_start(): Session cannot be started after headers have already been sent (sent from C:\Users\bmbea\Desktop\web projects\socialdonorstatick.io\setup_test.php on line 4) in C:\Users\bmbea\Desktop\web projects\socialdonorstatick.io\php\config.php on line 131
+[03-Mar-2026 23:59:20 Africa/Johannesburg] PHP Warning:  session_regenerate_id(): Session ID cannot be regenerated when there is no active session in C:\Users\bmbea\Desktop\web projects\socialdonorstatick.io\php\config.php on line 135
+[03-Mar-2026 23:59:20 Africa/Johannesburg] PHP Fatal error:  Uncaught Error: Undefined constant PDO::MYSQL_ATTR_INIT_COMMAND in C:\Users\bmbea\Desktop\web projects\socialdonorstatick.io\php\config.php:52
+Stack trace:
+#0 C:\Users\bmbea\Desktop\web projects\socialdonorstatick.io\setup_test.php(57): get_db_connection()
+#1 {main}
+  thrown in C:\Users\bmbea\Desktop\web projects\socialdonorstatick.io\php\config.php on line 52

@@ -1,242 +1,130 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="vieport" content="width=device-width, initial-scale=1.0">
-        <title>Social Donor</title>
-        <!--stylesheet-->
-        <link rel="stylesheet" href="css/style.css">
-        <script src="js/popup.js"></script>
-        <script src="https://code.iconify.design/2/2.2.1/iconify.min.js"></script>
- </head>
- <body>
-
-  
-     <header>
-     <nav>
-       <a href=""><img src="images/logo.svg" alt=""></a> 
-
-        
-     <div class="nav-links">
-         <ul>
-             <li><a href="index.html" class="active">HOME</a></li>
-             <li><a href="donors names.html">DONOR</a></li>
-             <li><a href="public dashboard.html ">DASHBOARD</a></li>
-             <li><a href="blood request list.html">REQUEST</a></li>
-             <li><a href="login admin.html ">ADMIN</a></li>
-         </ul>
-
-     </div>
-     <input class="search-bar" type="text" placeholder="search">
-     <div class="icon-1">
-       <img src="images/fa_search.svg" alt="">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Social Donor | Home</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link
+    rel="stylesheet"
+    href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+    crossorigin="">
+  <link rel="stylesheet" href="css/redesign.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container topbar">
+      <a class="brand" href="index.html">
+        <img src="images/logo.svg" alt="Social Donor logo">
+        <span>Social Donor</span>
+      </a>
+      <button class="nav-toggle" aria-expanded="false" aria-label="Toggle navigation">Menu</button>
+      <nav class="site-nav">
+        <a href="index.html">Home</a>
+        <a href="donors names.html">Donors</a>
+        <a href="public dashboard.html">Dashboard</a>
+        <a href="blood request list.html">Requests</a>
+        <a href="login admin.html">Admin</a>
+      </nav>
+      <div class="header-actions">
+        <a class="button ghost" href="donors login.html">Donor Login</a>
+        <a class="button" href="donor signup.html">Join as Donor</a>
+      </div>
     </div>
-        <div class="buttons2">
-            <a href="Mdonors login.html" class="btn btn-1">Login</a>
-            <a href="donor signup.html" class="btn btn-2">sign-up</a>
-        </div>
-    </nav>
-    <div class="mini-bar"></div>
-    <div class="header-img">
-        <h1>THE GIFT OF<span>&nbsp;BLOOD&nbsp;</span>IS THE GIFT OF LIFE</h1>
-           <h2> DONATE TODAY</h2>
-            <h3>SAVE  LIVES</h3>
+  </header>
 
+  <main>
+    <div class="container">
+      <section class="hero">
+        <article class="panel" data-animate>
+          <p class="kicker">Donate Today</p>
+          <h1>The Gift Of <span>Blood</span> Is The Gift Of Life</h1>
+          <p class="muted">One donation can help save up to three lives. Register, locate a donation center, and respond to urgent requests in minutes.</p>
+          <div class="form-actions">
+            <a class="button" href="donor signup.html">Become A Donor</a>
+            <a class="button ghost" href="blood request list.html">View Live Requests</a>
+          </div>
+          <div class="chip-row" style="margin-top: 1rem;">
+            <span class="chip">Safe Process</span>
+            <span class="chip">National Reach</span>
+            <span class="chip">Fast Matching</span>
+          </div>
+        </article>
 
-            <center>
-  
-                <div id="inner-nav">
-            <a href="donors login.html" id="buton-1"><img src="images/Profile.svg" alt=""> <h6>Profile</h6></a>
-            <a href="index.html" id="buton-3"><img src="images/location.svg" alt=""><h6>Where to Donate</h6></a>
-            <a href="https://www.1news.co.nz/2022/08/27/muslims-unite-in-blood-donation-world-record-attempt/" id="buton-4"><img src="images/news.svg" alt=""> <h6>News</h6></a>
-            <a href="donors login.html" id="buton-5"><img src="images/alert.svg" alt=""> <h6>Alert</h6></a>
-            <a href="donors login.html" id="buton-6"><img src="images/dona.svg" alt="">     <h6>Become a DONOR</h6></a>
+        <aside class="panel" data-animate="2">
+          <img src="images/blood cover top.jpg" alt="Blood donation awareness banner" style="border-radius: 14px; min-height: 230px; object-fit: cover;">
+          <div class="quick-links" style="margin-top: 1rem;">
+            <a class="chip" href="donors profile.html">Profile</a>
+            <a class="chip" href="Donors received.html">Blood Types</a>
+            <a class="chip" href="alert page.html">Alerts</a>
+            <a class="chip" href="public dashboard.html">Trends</a>
+          </div>
+        </aside>
+      </section>
 
-        </div>
-        </center>
-        
+      <section class="grid two">
+        <article class="card" data-animate>
+          <h2 class="section-title">About Social Donor</h2>
+          <p class="muted">Social Donor connects willing donors with hospitals and communities across South Africa. We focus on speed, traceability, and donor education so requests are fulfilled faster and safely.</p>
+          <ul class="list">
+            <li>Rapid response alerts for urgent blood types.</li>
+            <li>Donor-first account and profile management.</li>
+            <li>Public and admin dashboards for transparent impact.</li>
+          </ul>
+        </article>
+
+        <article class="card" data-animate="2">
+          <h2 class="section-title">Find A Donation Center</h2>
+          <p class="muted">Live map with nearby places that currently need blood donations.</p>
+          <div id="donationMap" class="map-embed" aria-label="Live map of urgent donation locations"></div>
+          <h3 class="map-subtitle">Places Needing Donations Right Now</h3>
+          <ul id="needsList" class="needs-list" aria-live="polite"></ul>
+        </article>
+      </section>
     </div>
+  </main>
 
-    </header>
-    <main>
-        <div class="border"></div>
-            <h1>About-us</h1>
-            <div class="line">
-             
-                <p class="text-1">Social Donors Service</p>
-
-                <p>Social Donors is a not-for-profit organisation; 
-                    therefore, 
-                    ownership of its assets does not vest in its members. In the event that Socail Donor should stop operating, its assets would have to be transferred to an 
-                    organisation with similar goals and objectives.</p>
-                    <p>Socila Donors provides an essential service
-                         within South Africa and is rated amongst the best in the world in the provision of blood and blood products, as well as in relation to the research and training provided.
-                    </p>
-                    <p>Social Donors operates across all of South Africa, with the exclusion of the Western Cape.
-                    </p>
-                    <p>Social Donors is further regarded as a major role player in the provision of support to countries in the SADC region.</p>
-
-        </div>
-        <div class="border-8"></div>
-        <div class="cover7">
-            <h1>What is your type?</h1>
-            <div class="message-5">
-            <p>The differences in human blood are due to the presence or absence of certain protein molecules called antigens and antibodies.
-                 The antigens are located on the surface of the red blood cells and the antibodies are in the blood plasma.<br>
-                 <br>Individuals have different types and combinations of these molecules.
-
-               blood group you belong to depends on what you have inherited from your parents. 
-                
-              To date, more than 20 genetically determined blood group systems exist, 
-                    but the AB0 and Rh blood group systems are the most important ones used for blood transfusions.
-               <br>
-               <br> blood groups are compatible with each other.
-                     Mixing incompatible blood groups leads to blood clumping, or agglutination, which is dangerous for individuals.
-            </p>
-     
-        </div> 
-
-        </div>
-
-        <!------------------------------- Automatic Popup -------------------------------->
-  <div class="popup">
-    <button id="close" onclick="closeBox()">&times;</button>
-    <h1 class="messege"></h1> 
-    <p>
-    Hope you have a great day.
-           All the way from<span class="location"></span>
-           Would you like to donate blood to help save 3 lives?
-      </p>
-      <br>
-      <p class="time_date"></p>
-       <a href="Html/Reg.html">Yes. Let's go!</a>
-  </div>
-  <script src="js/location.js"></script>
-    <div id="boxer-90">
-
-
-        <div class="image-34">
-            <img src="images/donated now.svg" alt="">
-            <div class="buttons20">
-                <a href="donor signup.html" class="donatenow">DONATE NOW</a>
-            </div>
-        </div>
-<br>
-        <div class="image-2">
-            <br>
-            <div class="image-4">
-                <p class="location">FIND LOCATION NEAR YOU<br>
-                    DONATION CENTER :</p>
-    
-            </div>
-          <br><br><br>
-           
-                <img src="images/map.svg" alt="" width="700px" height="700px">
-
-   
-        </div>
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div>
+        <a class="brand" href="index.html"><img src="images/logo.svg" alt="Social Donor logo"><span>Social Donor</span></a>
+        <p class="brand-note">Community-driven blood donation coordination platform.</p>
+      </div>
+      <div>
+        <h4>Where To Donate</h4>
+        <ul>
+          <li>Donor Centers</li>
+          <li>Mobile Blood Drives</li>
+          <li>Corporate Programs</li>
+        </ul>
+      </div>
+      <div>
+        <h4>Donor Support</h4>
+        <ul>
+          <li><a href="donors login.html">Donor Login</a></li>
+          <li><a href="donor signup.html">Create Account</a></li>
+          <li><a href="Donors received.html">Blood Type Guide</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <ul>
+          <li>011 000 1234</li>
+          <li>socialdonor01@gmail.com</li>
+          <li>Johannesburg, South Africa</li>
+        </ul>
+      </div>
     </div>
+  </footer>
 
-
-
-
-
-
-
-    <footer>
-        <div id="footer-bulk">
-            
-            <div class="footer-items">
-                <h4>WHERE TO DONATE</h4>
-                <br>
-                <ul>
-                   <li><a href="">Donor centers</a></li> 
-                   <li><a href="">Blood drives</a></li> 
-                   <li><a href="">Book a blood drive</a></li> 
-                </ul>
-                
-                <div class="logo-4">
-                    <a href="index.html"><img src="images/logo.svg" alt=""></a> 
-                    <div id="copy-r">
-                        <i><P>© Socialdonor 2022
-                            Terms & Conditions
-                            Privacy
-                            </P></i>
-                    </div>
-                    
-                </div>
-               
-            </div>
-              <div class="footer-items">
-                  <h4>DONORS</h4>
-                  <br>
-                  <ul>
-                   <li><a href="">who can donate ?</a></li> 
-                   <li><a href="">why donate blood ?</a></li> 
-                   <li><a href="">Donation process</a></li> 
-                   <li><a href="">Deferrals</a></li>
-                   <li><a href="">Brand Ambassador</a></li>
-                   <li><a href="">FAQs</a></li>
-                  
-                  </ul>
-               </div>
-               <div class="footer-items">
-                <br><br>
-                <ul>
-                   <li><a href="">About us</a></li> 
-                   <li><a href="">Blood products</a></li> 
-                   <li><a href="">blood type</a></li> 
-                   <li><a href="">campaigns</a></li> 
-                   <li><a href="">Careers</a></li>  
-                   <li><a href="">Chat page</a></li> 
-                   <li><a href="">Clinical service</a></li> 
-                   <li><a href="">Donation process</a></li> 
-                  
-                </ul>
-            </div>
-            <div class="footer-items">
-                <h4>CONTACTS</h4>
-                <br>
-                <ul>
-                   <li><a href="">011 000 1234</a></li> 
-                   <li><a href="">Email:socialdonor01@gmail.com</a></li>  
-                </ul>
-            </div>
-        
-            <div class="footer-30">
-                <br>
-                <input id="search-bar" type="text" placeholder="Enter your email">
-                <br>
-    <div id="subscribe">
-        <center><a href="#">Subscribe</a></center>
-    
-        <br><br>
-                <p><i>By subscribing you confirm that you have read  and<br> 
-                    accept our terms of use</i> </p>
-    </div>
-               
-                
-         <br><br><br><br>
-                    <div id="footer-items-5">
-                        <ul>
-                           <li><a href=""><img src="images/facebook icon.svg" alt=""></a></li> 
-                           <li><a href=""><img src="images/linked in.svg" alt=""></a></li> 
-                           <li><a href=""><img src="images/twitter.svg" alt=""></a></li> 
-                          
-                        </ul>
-                    </div>
-                    
-            </div>
-    
-           
-    
-    
-        </div>
-        
-    </footer>
-    
-    </main>
-   
- </body>
+  <script
+    src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+    integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+    crossorigin=""></script>
+  <script src="js/redesign.js"></script>
+</body>
 </html>

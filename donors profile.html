@@ -1,242 +1,76 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Social Donor 2</title>
-        <!--stylesheet-->
-        <link rel="stylesheet" href="css/style page 4.css">
-        <script src="https://code.iconify.design/2/2.2.1/iconify.min.js"></script>
-        <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet">
-        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
- </head>
- <body>
-     <header>
-     <nav>
-       <a href=""><img src="images/logo.svg" alt=""></a> 
-
-        
-     <div class="nav-links">
-         <ul>
-             <li><a href="index.html">HOME</a></li>
-             <li><a href="donors names.html ">DONOR</a></li>
-             <li><a href="public dashboard.html ">DASHBOARD</a></li>
-             <li><a href="blood request list.html ">REQUEST</a></li>
-             <li><a href="login admin.html">ADMIN</a></li>
-         </ul>
-
-     </div>
-     <input class="search-bar" type="text" placeholder="search">
-     <div class="icon-1">
-       <img src="images/fa_search.svg" alt="">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Social Donor | Donor Profile</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/redesign.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container topbar">
+      <a class="brand" href="index.html"><img src="images/logo.svg" alt="Social Donor logo"><span>Social Donor</span></a>
+      <button class="nav-toggle" aria-expanded="false" aria-label="Toggle navigation">Menu</button>
+      <nav class="site-nav">
+        <a href="index.html">Home</a>
+        <a href="donors names.html">Donors</a>
+        <a href="public dashboard.html">Dashboard</a>
+        <a href="blood request list.html">Requests</a>
+        <a href="login admin.html">Admin</a>
+      </nav>
+      <div class="header-actions">
+        <a class="button ghost" href="php/logout.php">Log Out</a>
+        <a class="button" href="public dashboard.html">My Dashboard</a>
+      </div>
     </div>
-        <div class="buttons2">
-            <a href="index.html" class="btn btn-1">Log out</a>
-            <img src="images/log out.svg" alt="">
+  </header>
+
+  <main>
+    <div class="container split">
+      <section class="panel" data-animate>
+        <p class="kicker">Account</p>
+        <h1 style="margin: 0.2rem 0 0.65rem;">Donor Profile Settings</h1>
+        <div class="avatar"><img src="images/profile picture.svg" alt="Profile picture"></div>
+        <p class="muted">Keep your details up to date so matching and emergency notifications stay accurate.</p>
+        <div class="chip-row" style="margin-top: 0.8rem;">
+          <span class="chip">Blood Type O+</span>
+          <span class="chip">Eligible</span>
+          <span class="chip">Last Donation: 6 weeks ago</span>
         </div>
-    </nav>
-    <div class="mini-bar"></div>
-    <div class="header-img">
-   <h2> DONATE TODAY</h2>
+      </section>
 
-   <center>
-  
-    <div id="inner-nav">
-<a href="administration profile.html" id="buton-1"><img src="images/Profile.svg" alt=""> <h6>Profile</h6></a>
-<a href="" id="buton-3"><img src="images/location.svg" alt=""><h6>Where to Donate</h6></a>
-<a href="" id="buton-4"><img src="images/news.svg" alt=""> <h6>News</h6></a>
-<a href="alert page.html" id="buton-5"><img src="images/alert.svg" alt=""> <h6>Alert</h6></a>
-<a href="donors names.html" id="buton-6"><img src="images/dona.svg" alt="">     <h6>Become a DONOR</h6></a>
-
-</div>
-</center>
-
-</div>
-            
-  
-    </header>
-<!--profile-->
-    <main>
-        <center>
-<div id="round-line">
-        
-   <br>  <br>  <br>  <br>
-   <br>  <br>  <br>  <br>
-
-   <br>  <br>  <br>  <br>
- 
-    <center>
-    <div class="rows">
-        <h4>Profile Setting</h4>
-        <div class="profile-pic-div">
-            <img src="images/profile picture.svg" id="photo">
-            <input type="file" id="file">
-            <label for="file" id="uploadBtn">Choose Photo</label>
-
-          
+      <section class="panel" data-animate="2">
+        <form class="form-shell" action="php/donor_profile_update.php" method="post">
+          <div class="form-grid">
+            <div class="field"><label for="username">Username</label><input id="username" name="username" type="text" value="elon.musk"></div>
+            <div class="field"><label for="name">Name</label><input id="name" name="first_name" type="text" value="Elon" required></div>
+            <div class="field"><label for="surname">Surname</label><input id="surname" name="surname" type="text" value="Musk" required></div>
+            <div class="field"><label for="email">Email</label><input id="email" name="email" type="email" value="elon@example.com" required></div>
+            <div class="field"><label for="relationship">Emergency Contact</label><input id="relationship" name="emergency_contact" type="text" value="Family"></div>
+            <div class="field"><label for="contact">Emergency Number</label><input id="contact" name="emergency_number" type="tel" value="+27 71 555 1000"></div>
           </div>
-          
-          <script src="page4.js"></script>
-          
-              <form action="">
-
-                    <div id="line-box">
-                        <input type="text" placeholder="user name" >
-                     <a href=""><span class="material-icons">
-                        person
-                        </span></a>
-                    </div>
-                    <br>
-                    <div id="line-box">
-                        <input type="text" placeholder="Name" >
-                        <a href=""><span class="material-icons">
-                            edit
-                            </span></a>
-                    </div>
-                    <br>
-                    <div id="line-box">
-                        <input type="text" placeholder="surname" >
-                    <a href="">    <span class="material-icons">
-                        edit
-                        </span></a>
-                    </div>
-                    <br>
-                    <div id="line-box">
-                        <input type="email" placeholder="Email" >
-                    <a href="">    <span class="material-icons">
-                        email
-                        </span></a>
-                    </div>
-                    <br>
-                    <div id="line-box">
-                        <input type="text" placeholder="Relationship" >
-                        <a href=""><span class="material-icons">
-                            edit
-                            </span></a>
-                    </div>
-                    <br>
-                    <div id="line-box">
-                        <input type="text" placeholder="change password" >
-                   <a href="">
-                    <span class="material-icons">
-                        key
-                        </span>
-                   </a>
-                    </div>
-           
-              </form>
+          <div class="form-actions">
+            <button type="submit" class="button">Save Changes</button>
+            <a class="button ghost" href="alert page.html">View Alerts</a>
+          </div>
+        </form>
+      </section>
     </div>
+  </main>
 
-    <div class="edite">
-   <a href="">Save/edite</a>
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div><a class="brand" href="index.html"><img src="images/logo.svg" alt="Social Donor logo"><span>Social Donor</span></a><p class="brand-note">Profiles help us match donors faster during emergencies.</p></div>
+      <div><h4>Profile Links</h4><ul><li><a href="donors names.html">Donor Directory</a></li><li><a href="public dashboard.html">Donation Stats</a></li><li><a href="blood request list.html">Request Queue</a></li></ul></div>
+      <div><h4>Actions</h4><ul><li><a href="donor signup.html">Register New Donor</a></li><li><a href="alert page.html">Open Alerts</a></li><li><a href="donors login.html">Login</a></li></ul></div>
+      <div><h4>Contact</h4><ul><li>011 000 1234</li><li>socialdonor01@gmail.com</li><li>Support: ext 204</li></ul></div>
     </div>
-</center> 
-            
-       
+  </footer>
 
- 
-</div>
-</center>
-    </main>
-        
-
-<!--footer-->
-<footer>
-    <div id="footer-bulk">
-        
-        <div class="footer-items">
-            <h4>WHERE TO DONATE</h4>
-            <br>
-            <ul>
-               <li><a href="">Donor centers</a></li> 
-               <li><a href="">Blood drives</a></li> 
-               <li><a href="">Book a blood drive</a></li> 
-            </ul>
-            
-            <div class="logo-2">
-                <a href=""><img src="images/logo.svg" alt=""></a> 
-                <div id="copy-r">
-                    <i><P>© Socialdonor 2011-2022
-                        Terms & Conditions
-                        Privacy
-                        </P></i>
-                </div>
-                
-            </div>
-           
-        </div>
-          <div class="footer-items">
-              <h4>DONORS</h4>
-              <br>
-              <ul>
-               <li><a href="">who can donate ?</a></li> 
-               <li><a href="">why donate blood ?</a></li> 
-               <li><a href="">Donation process</a></li> 
-               <li><a href="">Deferrals</a></li>
-               <li><a href="">Brand Ambassador</a></li>
-               <li><a href="">FAQs</a></li>
-              
-              </ul>
-           </div>
-           <div class="footer-items">
-            <br><br>
-            <ul>
-               <li><a href="">About us</a></li> 
-               <li><a href="">Blood products</a></li> 
-               <li><a href="">blood type</a></li> 
-               <li><a href="">campaigns</a></li> 
-               <li><a href="">Careers</a></li>  
-               <li><a href="">Chat page</a></li> 
-               <li><a href="">Clinical service</a></li> 
-               <li><a href="">Donation process</a></li> 
-              
-            </ul>
-        </div>
-        <div class="footer-items">
-            <h4>CONTACTS</h4>
-            <br>
-            <ul>
-               <li><a href="">011 000 1234</a></li> 
-               <li><a href="">Email:socialdonor01@gmail.com</a></li>  
-            </ul>
-        </div>
-    
-        <div class="footer-30">
-            <br>
-            <input id="search-bar" type="text" placeholder="Enter your email">
-            <br>
-<div id="subscribe">
-    <center><a href="#">Subscribe</a></center>
-
-    <br><br>
-            <p><i>By subscribing you confirm that you have read  and<br> 
-                accept our terms of use</i> </p>
-</div>
-           
-            
-     <br><br><br><br>
-                <div id="footer-items-5">
-                    <ul>
-                       <li><a href=""><img src="images/facebook icon.svg" alt=""></a></li> 
-                       <li><a href=""><img src="images/linked in.svg" alt=""></a></li> 
-                       <li><a href=""><img src="images/twitter.svg" alt=""></a></li> 
-                      
-                    </ul>
-                </div>
-                
-        </div>
-
-       
-
-
-    </div>
-    
-</footer>
-    
-    </main>
-
- </body>
+  <script src="js/redesign.js"></script>
+</body>
 </html>
